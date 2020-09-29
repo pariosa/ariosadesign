@@ -1,0 +1,124 @@
+#App{
+    background-color:#5552ff;
+    height:100%;
+    width:100%; 
+    overflow:none;
+} 
+@keyframes titlebg {
+    0%   {background-color:rgb(72, 243, 212); left:0px; top:0px;}
+    15%  {background-color:rgb(211, 129, 252); left:200px; top:0px;}
+    25%  {background-color:rgb(255, 151, 234); left:200px; top:0px;}
+    39%  {background-color:rgb(249, 177, 255); left:200px; top:0px;}
+    50%  {background-color:rgb(255, 145, 193); left:200px; top:200px;}
+    65%  {background-color:rgb(255, 151, 234); left:200px; top:0px;}
+    75%  {background-color:rgb(182, 139, 250); left:0px; top:200px;}
+    85% {background-color:rgb(136, 160, 255); left:0px; top:0px;}
+    100%   {background-color:rgb(72, 243, 212); left:0px; top:0px;}
+
+}
+.title{
+    border-top:4px solid black;
+    border-right:4px solid black;
+    border-bottom:4px solid black;
+    padding-left:5%; 
+    padding-right:5%;
+    margin-left:-58%;
+    padding-bottom:38px;
+    margin-right:-22%;
+    padding-top:35px;  
+    animation-name: titlebg;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+    background-position: -200px 200px;
+    background-size:100%;
+    transform: rotate(-8deg);
+    
+}
+.title-text{
+    transform: rotate(-0deg);
+    color:white;
+    font-family: 'Yeseva One', cursive;
+    font-size:9vmin;
+    line-height:11vmin;
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+}   
+
+
+.navigation{
+    min-width: 450px;
+    text-align:right;
+    padding-top:30px;
+    width:100%;
+    padding-right:40px;
+    position:relative;
+    align-items:left;
+}
+
+.navItems{
+    padding:20px;
+    position:relative;
+    align-items:left;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-item{
+    font-family: 'Yeseva One', cursive;
+    color:black;
+    background-color:white;
+    margin-left:10px;
+    font-size:3vmin;
+    margin-right:10px;
+    padding-top:20px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right:3px solid black;
+    border-bottom:5px solid white;
+    margin-bottom:-5px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    padding-bottom:14px;
+    padding-left:15px;
+    padding-right:15px;
+    display:inline-block;
+}
+.nav-item.inactive{
+    border-bottom:5px solid black;
+
+}
+.page{
+  padding-top:40px;
+  padding-left:40px; 
+  min-width: 450px;
+  width:90%;
+  margin:0 auto;
+  height:1000px;
+  background-color:white;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px
+}
+
+.introduction{
+
+}
+
+.about{
+
+}
+
+.portfolio{
+
+}
+
+.footer{
+
+}
+
+.footer-blurb{
+
+}
