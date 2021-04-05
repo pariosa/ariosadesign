@@ -1,10 +1,15 @@
 import css from "../../css/styles.css";  
-import React from 'react';
+import React, {useReducer, useContext} from 'react';
+import UIReducer from '../../Reducers/UIReducer';
+import { UIContext, UIProvider } from "../../Store/UIContext";
 
 export default function About() {
+  const state = useContext(UIContext);
   return (
-    <div className="page about">
-       Here is my about page
-    </div>
+    <UIProvider>
+      <div className={`page about ${state && state.activeTab === "nav-item-main"? "" : "hidden"}`}>
+        Here is my about page
+      </div>
+    </UIProvider>
   )
 } 
