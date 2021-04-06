@@ -1,7 +1,7 @@
 import { 
 	UPDATE_ACTIVE_TAB, 
 	UPDATE_MEOWING_TAB
- } from "../constants/actionTypes";
+ } from "../Constants/actionTypes";
 
 export const updateActiveTab = (activeTab) => ({
 	type: UPDATE_ACTIVE_TAB,
