@@ -240,7 +240,12 @@
 .email{
     color:#7f7f7f;
 }
-
+.mixcloud{
+    color:#09be01;
+}
+.mixcloud:hover{
+    color:#09be01;
+}
 .twitter:hover{
     color:#0aabed;
 }

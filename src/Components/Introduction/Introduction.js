@@ -56,6 +56,10 @@ export default function Introduction(props) {
             <SocialIcon url="https://soundcloud.com/ariosa" />
             <a className="soundcloud link" href="https://soundcloud.com/ariosa">Soundcloud</a>
           </div>
+          <div className="social mixcloud">
+            <SocialIcon url="https://www.mixcloud.com/ariosa/" />
+            <a className="mixcloud link" href="https://www.mixcloud.com/ariosa/">Mixcloud</a>
+          </div>
 
           <div className="social email">
             <SocialIcon url="mailto:ariosa@gmail.com" />
