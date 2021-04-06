@@ -24,6 +24,12 @@ export default function Navigation(props) {
               dispatch(actions.updateActiveTab("nav-item-main"))
               dispatch(actions.updateMeowingTab("nav-item-main"))
             }}
+            onTouchStart={()=>{
+              dispatch(actions.updateActiveTab("nav-item-main"))
+              dispatch(actions.updateMeowingTab("nav-item-main"))
+            }}
+            onTouchEnd={()=>dispatch(actions.updateMeowingTab("none"))}
+            
             onMouseLeave={()=> dispatch(actions.updateMeowingTab("none"))}
             onMouseUp={()=>dispatch(actions.updateMeowingTab("none"))}
             onClick={()=>dispatch(actions.updateActiveTab("nav-item-main"))}
@@ -45,7 +51,14 @@ export default function Navigation(props) {
           onClick={()=>{ 
               dispatch(actions.updateActiveTab("nav-item-about"))
             }
-          } className={`
+          }
+          onTouchStart={()=>{
+            dispatch(actions.updateActiveTab("nav-item-about"))
+            dispatch(actions.updateMeowingTab("nav-item-about"))
+          }}
+          onTouchEnd={()=>dispatch(actions.updateMeowingTab("none"))}
+           
+          className={`
             nav-item
             ${meowingTab && meowingTab === "nav-item-about" ? "meowing active" : ""}
             ${activeTab && activeTab === "nav-item-about" ? "active" : "inactive"} 
@@ -59,6 +72,12 @@ export default function Navigation(props) {
             dispatch(actions.updateActiveTab("nav-item-portfolio"))
             dispatch(actions.updateMeowingTab("nav-item-portfolio"))
           }}
+          onTouchStart={()=>{
+            dispatch(actions.updateActiveTab("nav-item-portfolio"))
+            dispatch(actions.updateMeowingTab("nav-item-portfolio"))
+          }}
+          onTouchEnd={()=>dispatch(actions.updateMeowingTab("none"))}
+          
           onMouseUp={()=>dispatch(actions.updateMeowingTab("none"))}
           onMouseLeave={()=> dispatch(actions.updateMeowingTab("none"))}
           onClick={()=>{ 
@@ -76,6 +95,12 @@ export default function Navigation(props) {
             dispatch(actions.updateActiveTab("nav-item-music"))
             dispatch(actions.updateMeowingTab("nav-item-music"))
           }}
+          onTouchStart={()=>{
+            dispatch(actions.updateActiveTab("nav-item-music"))
+            dispatch(actions.updateMeowingTab("nav-item-music"))
+          }}
+          onTouchEnd={()=>dispatch(actions.updateMeowingTab("none"))}
+          
           onMouseUp={()=>dispatch(actions.updateMeowingTab("none"))}
           onMouseLeave={()=> dispatch(actions.updateMeowingTab("none"))}
           onClick={()=>{ 
@@ -94,6 +119,12 @@ export default function Navigation(props) {
             dispatch(actions.updateActiveTab("nav-item-recipes"))
             dispatch(actions.updateMeowingTab("nav-item-recipes"))
           }}
+          onTouchStart={()=>{
+            dispatch(actions.updateActiveTab("nav-item-recipes"))
+            dispatch(actions.updateMeowingTab("nav-item-recipes"))
+          }}
+          onTouchEnd={()=>dispatch(actions.updateMeowingTab("none"))}
+          
           onMouseUp={()=>dispatch(actions.updateMeowingTab("none"))}
           onMouseLeave={()=> dispatch(actions.updateMeowingTab("none"))}
           onClick={()=>{ 
