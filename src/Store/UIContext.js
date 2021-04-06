@@ -5,7 +5,10 @@ import UIReducer from "../Reducers/UIReducer";
 
 export const initialState = {
   activeTab:"nav-item-main",
-  meowingTab:"none"
+  meowingTab:"none",
+  activeSong:"",
+  activeRecipe:"",
+  activeCode:""
 };
 
 export const UIContext = createContext(initialState);

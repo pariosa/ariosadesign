@@ -1,10 +1,7 @@
 import css from "../css/styles.css";  
 import React, { useReducer } from 'react';
 import Title from "./Title";
-import Navigation from "./Navigation";
-import Introduction from "./Introduction/Introduction"
-import About from "./About/About";
-import Portfolio from "./Portfolio/Portfolio";
+import Navigation from "./Navigation"; 
 import Footer from "./Footer";  
 import UIReducer from '../Reducers/UIReducer';
 import { initialState } from '../Store/UIContext'

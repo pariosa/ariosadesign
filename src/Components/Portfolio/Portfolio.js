@@ -1,10 +1,15 @@
 import css from "../../css/styles.css";  
 import React from 'react';
-
-export default function Portfolio() {
+import data from "../../Data/Code"
+import Website from "./Website"
+export default function Portfolio(props) {
+  const items = data;
+  const getItems = (data) => {
+    return data.map(item =>(<Website props={item}></Website>));
+  }
   return (
     <div className="page portfolio">
-       Here is my portfolio page, more coming soon!
+        {getItems(data)}
     </div>
   )
 } 
