@@ -162,7 +162,7 @@
 }
 
 .portfolio{
-
+ min-height:1600px;
 }
 
 .footer{
@@ -276,4 +276,42 @@
 .fas{
     min-width:50px;
     min-height:50px;
+}
+.list-item{
+    display: inline-block;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.charactersheet{
+    width:100%;
+    
+    margin:0 auto;
+    max-width:500px;
+    height:260px;
+    background-size:contain;
+    background-image:url("../img/screenshots/charactersheet.png");
+
+}
+.cvlturecrew{
+    width:100%;
+    margin:0 auto;
+    height:200px;
+    max-width:500px;
+    background-size:contain;
+    background-image:url("../img/screenshots/cvlturecrew.png");
+
+}
+.ecommerce{
+    width:100%;
+    margin:0 auto;
+    height:215px;
+    text-align:center;
+    max-width:500px;
+    background-size:contain;
+    background-image:url("../img/screenshots/laravel_admin.png");
+}
+.website{
+    padding-bottom:40px;
+    text-align:center;
 }

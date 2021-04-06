@@ -11,7 +11,7 @@ export default function About() {
           Hey!
           </h1>
           <h2>
-            A little about myself, i've been Dj'ing and Producing music since 2010, I'm a software engineer by trade.
+            A little about myself, I've been Dj'ing and Producing music since 2010, I'm a software engineer by trade.
           </h2> 
           <div className="dj-pic"></div>
           <h3>

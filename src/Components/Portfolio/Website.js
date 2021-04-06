@@ -1,55 +1,59 @@
 import css from "../../css/styles.css";  
 import React from 'react';  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faReact, FANodejs, faFireAlt, faFire } from '@fortawesome/free-solid-svg-icons'
-
-export default function Website(props) {
+  import '../../../node_modules/font-awesome/css/font-awesome.min.css'; 
+ export default function Website(props) {
     const {
         title,
         link,
+        className,
         githubLink,
         description,
         technologies,
-        technologiesIcons,
-        screenshot
-    } = props.props;
+        technologiesIcons, 
+    } = props.props; 
     const getTechnologies = (technology) =>technology.map(technologyItem=>
-        <li>
+        <li className="list-item">
             {technologyItem}
         </li> 
     );
-    const getIcons = (techIcons) => technologiesIcons.map(icon =>(
-        <i className={`fas ${icon}`} icon={icon}></i>)
+    const getIcons = (techIcons) => technologiesIcons.map(icon =>{
+        return(
+        <li className="list-item"> 
+            <FontAwesomeIcon icon={icon} size="2x"/> 
+        </li>
+        )
+    }
     );
   return (
     <div className="website">
        <div className="website-title">
-           {title}
+           <h2>{title}</h2>
        </div>
        <div className="website-link">
            {link!==""?
-            <a href={link}>Hosted Source</a>
+            <a href={link}><h3>{link}</h3></a>
            :
            ""}
           
        </div>
        <div className="website-github">
-           {githubLink}
+       <a href={githubLink}><h3>{githubLink}</h3></a>
        </div>
        <div className="website-description">
-           {description}
+           <h4>{description}</h4>
        </div>
-       utilizing:
+       <h5> utilizing: </h5>
        <ul className="website-technologies">
            {getTechnologies(technologies)}
        </ul>
-       <div className="website-technologies-icons">
-       <i class='fas fa-fire-alt fa-lg'>fa-lg</i><br/>
+       <div className="website-technologies-icons"> 
+        <ul>
            {getIcons(technologiesIcons)}
+        </ul>
        </div>
        <div className="website-screenshot">
-           <img src={screenshot} />
+           <div className={className} />
 
        </div>
     </div>
