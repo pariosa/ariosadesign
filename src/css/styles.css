@@ -2,7 +2,7 @@
     background-color:#5552ff;
     height:100%;
     width:100%; 
-    overflow:none;
+    overflow:hidden;
     min-width:650px;
 } 
 .center{
