@@ -3,7 +3,11 @@
     height:100%;
     width:100%; 
     overflow:none;
+    min-width:650px;
 } 
+.center{
+    text-align:center;
+}
 .hidden{
     display:none;
 }
@@ -20,6 +24,7 @@
 
 }
 .title{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-top:4px solid black;
     border-right:4px solid black;
     border-bottom:4px solid black;
@@ -31,10 +36,12 @@
     padding-top:35px;  
     animation-name: titlebg;
     animation-iteration-count: infinite;
-    animation-duration: 14s;
+    animation-duration: 8s;
     background-position: -200px 200px;
     background-size:100%;
     transform: rotate(-8deg);
+    
+    
     
 }
 .title-text{
@@ -46,21 +53,30 @@
     text-align:center;
     width:100%;
     margin:0 auto;
+    color: pink;
+    /*transform: rotate(
+-13deg
+);
+    font-family: Helvetica;*/ 
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
 }   
 
 
 .navigation{
-    min-width: 525px;
+    min-width: 805px;
     text-align:right;
-    padding-top:30px;
+    padding-top:20px;
     width:100%;
     padding-right:10%;
+    padding-left:10%;
     position:relative;
     align-items:left;
 }
 
 .navItems{
-    padding:20px;
+    padding:5px;
+    right:150px;
+    min-width:100%;
     position:relative;
     align-items:left;
     padding-bottom: 0px;
@@ -68,21 +84,25 @@
 }
 
 .nav-item{
+    width:13%;
+    height: 20px;
     font-family: 'Yeseva One', cursive;
     color:black;
+    cursor:pointer;
+    text-align: center;
     background-color:white;
     margin-left:10px;
-    font-size:3vmin;
+    font-size:2vmin;
     margin-right:10px;
-    padding-top:20px;
+    padding-top:15px;
     border-top: 3px solid black;
     border-left: 3px solid black;
     border-right:3px solid black;
     border-bottom:5px solid white;
-    margin-bottom:-5px;
+    margin-bottom:-15px;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
-    padding-bottom:14px;
+    padding-bottom:12px;
     padding-left:15px;
     padding-right:15px;
     display:inline-block;
@@ -106,6 +126,9 @@
 .nav-item.active .cat{
     background-image:url('../img/cat1.png');
 }
+.nav-item.active.meowing .cat{
+    background-image:url('../img/cat2.png');
+}
 .nav-item .cat:hover{
     background-image:url('../img/cat1.png');
 }
@@ -119,13 +142,14 @@
   min-width: 450px;
   width:90%;
   margin:0 auto;
-  height:1000px;
+  height:900px;
   background-color:white;
   border-top: 5px solid black;
   border-left: 5px solid black;
   border-right: 5px solid black;
   border-top-right-radius:10px;
-  border-top-left-radius:10px
+  border-top-left-radius:10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .introduction{
@@ -141,9 +165,104 @@
 }
 
 .footer{
-
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    background-color: white;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom:30px;
+    text-align:center;
+    box-shadow: 15 45px 0px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .footer-blurb{
 
+}
+.social{
+    display:inline-block; 
+    padding:15px;
+    padding-left:5px;
+    font-size:18px;
+}
+@media screen and (max-width: 600px) {
+    .social{
+        width:100%; 
+    }
+}
+@media screen and ( min-width:600px ) and (max-width: 1000px) {
+    .social{
+        width:50%; 
+    }
+}
+@media screen and (min-width: 1000px) {
+    .social{
+        width:33%; 
+    }
+}
+
+.link{
+    padding:40px;    
+}
+.social > .link{
+    width:100%;
+}
+
+.twitter{
+    color:#0aabed;
+}
+.soundcloud{
+    color:#ff5604;
+}
+.github{
+    color:#000;
+}
+.facebook{
+    color:#3d5997;
+}
+.instagram{
+    color:#e94375;
+}
+.linkedin{
+    color:#047fb1;
+}
+.youtube{
+    color:#ff3333;
+}
+.tumblr{
+    color:#2d4762;
+}
+.email{
+    color:#7f7f7f;
+}
+
+.twitter:hover{
+    color:#0aabed;
+}
+.soundcloud:hover{
+    color:#ff5604;
+}
+.github:hover{
+    color:#000;
+}
+.facebook:hover{
+    color:#3d5997;
+}
+.instagram:hover{
+    color:#e94375;
+}
+.linkedin:hover{
+    color:#047fb1;
+}
+.youtube:hover{
+    color:#ff3333;
+}
+.tumblr:hover{
+    color:#2d4762;
+}
+.email:hover{
+    color:#7f7f7f;
 }

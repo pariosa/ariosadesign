@@ -4,7 +4,7 @@ import React from 'react';
 export default function Portfolio() {
   return (
     <div className="page portfolio">
-       Here is my portfolio page
+       Here is my portfolio page, more coming soon!
     </div>
   )
 } 

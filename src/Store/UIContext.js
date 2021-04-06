@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 import UIReducer from "../Reducers/UIReducer";
 
 export const initialState = {
-  activeTab:"nav-item-main"
+  activeTab:"nav-item-main",
+  meowingTab:"none"
 };
 
-export const UIContext = createContext();
+export const UIContext = createContext(initialState);
 
 export function UIProvider({reducer, initialState, children}) {
   const [activeTab, dispatch] = useReducer(UIReducer);
-
-    
+  
   return (
     <UIContext.Provider value={useReducer(reducer, initialState)}>
       { children }

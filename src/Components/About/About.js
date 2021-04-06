@@ -8,7 +8,7 @@ export default function About() {
   return (
     <UIProvider>
       <div className={`page about ${state && state.activeTab === "nav-item-main"? "" : "hidden"}`}>
-        Here is my about page
+        Here is my about page, more coming soon!
       </div>
     </UIProvider>
   )
