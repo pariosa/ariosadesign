@@ -5,7 +5,39 @@
     overflow:hidden;
     min-width:650px;
     min-height:100vh;
+    z-index:2;
+    padding-bottom:20px;
 } 
+.wrapper{
+    height:100%;
+    overflow:none;
+    z-index:0;
+    width:100%;
+    position:relative;
+}
+h2{
+    text-align:center;
+}
+.background{
+    z-index: -1;
+    position:fixed;
+    width:400%;
+    height:3000px;
+    left:-1000px;
+    top: 0; 
+    z-index: 0;
+}
+.zigzag {
+    z-index: -1;
+    margin-top:100px;
+    background: linear-gradient(135deg,rgb(98, 161, 233)  25%, transparent 25%) -50px 0,
+        linear-gradient(-135deg, rgb(70, 178, 240) 25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, #4f9fe0 25%, transparent 25%),
+        linear-gradient(-45deg, rgb(88, 145, 211) 25%, transparent 25%);
+    background-size: 100px 100px;
+    transform: rotate(30deg);
+}
+ 
 .center{
     text-align:center;
 }
@@ -27,9 +59,9 @@
 .title{
     overflow: hidden;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border-top:4px solid black;
-    border-right:4px solid black;
-    border-bottom:4px solid black;
+    border-top:3px solid black;
+    border-right:3px solid black;
+    border-bottom:3px solid black;
     padding-left:5%; 
     padding-right:5%;
     margin-left:-58%;
@@ -41,10 +73,13 @@
     animation-duration: 8s;
     background-position: -200px 200px;
     background-size:100%;
-    transform: rotate(-8deg);
-    
-    
-    
+    transform: rotate(-8deg);  
+}
+.list-icon{
+    color:#8b8b8b;
+}
+.list-icon:hover{
+    color:#2e2e2e;
 }
 .title-text{
     transform: rotate(-0deg);
@@ -55,11 +90,7 @@
     text-align:center;
     width:100%;
     margin:0 auto;
-    color: pink;
-    /*transform: rotate(
--13deg
-);
-    font-family: Helvetica;*/ 
+    color: pink; 
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
 }   
 
@@ -77,7 +108,8 @@
 
 .navItems{
     padding:5px;
-    right:150px;
+    margin:0 auto;
+    left:-20px;
     min-width:100%;
     position:relative;
     align-items:left;
@@ -86,7 +118,8 @@
 }
 
 .nav-item{
-    width:13%;
+    width:12%;
+    min-width:105px;
     height: 20px;
     font-family: 'Yeseva One', cursive;
     color:black;
@@ -94,15 +127,15 @@
     text-align: center;
     background-color:white;
     margin-left:10px;
-    font-size:2vmin;
+    font-size:20px;
     margin-right:10px;
     padding-top:15px;
     border-top: 3px solid black;
     border-left: 3px solid black;
     border-right:3px solid black;
-    border-bottom:5px solid white;
+    border-bottom:3px solid white;
     margin-bottom:-15px;
-    border-top-right-radius:10px;
+    border-top-right-radius:25px;
     border-top-left-radius:10px;
     padding-bottom:12px;
     padding-left:15px;
@@ -135,21 +168,22 @@
     background-image:url('../img/cat1.png');
 }
 .nav-item.inactive{
-    border-bottom:4px solid black;
+    border-bottom:3px solid black;
 
 }
 .page{ 
-  padding-top:40px;
-  padding-left:40px; 
-  min-width: 450px;
+  padding-top:25px;
+  padding-left:25px; 
+  min-width: 500px;
+  z-index:1;
   padding-right:40px;
   width:90%;
   margin:0 auto;
   height:900px;
   background-color:white;
-  border-top: 5px solid black;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
   border-top-right-radius:10px;
   border-top-left-radius:10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -158,11 +192,24 @@
 .introduction{
 
 }
-
-.about{
-
+.small-social-container{
+    margin:0 auto;
+    width:100%;
+    text-align:center
 }
-
+h3{
+    text-align:center
+}
+.music{
+    min-height:2200px; 
+}
+.songs{
+    padding-top:0px;
+    padding:10px;
+}
+.song{
+    padding:5px;
+}
 .portfolio{
  min-height:1600px;
 }
@@ -172,9 +219,9 @@
     margin: 0 auto;
     height: 30px;
     background-color: white;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    border-right: 5px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding-bottom:30px;
@@ -183,7 +230,7 @@
 }
 
 .footer-blurb{
-
+    padding:5px;
 }
 .social{
     display:inline-block; 
@@ -321,4 +368,7 @@
 .website{
     padding-bottom:40px;
     text-align:center;
+}
+.songs{
+    min-height:1300px;
 }

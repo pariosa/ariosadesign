@@ -13,9 +13,7 @@ export default function Introduction(props) {
       { state.activeTab === "nav-item-main" ? 
       <div className="page introduction"> 
         <h1 className="center">Hey, welcome to my website!</h1>
-        <div className="page-text"> 
-
-
+        <div className="page-text">   
 
           <div className="social github">
             <SocialIcon url="https://github.com/pariosa" />

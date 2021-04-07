@@ -10,7 +10,6 @@ export const codeTemplate = {
     technologiesIcons:[],
     screenshot:""
 }
-
 export const data = [
     {
         title:"React Character Sheet",

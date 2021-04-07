@@ -8,12 +8,20 @@ import { initialState } from '../Store/UIContext'
 import Page from "./Page";
 export default function App() {
   const [state,dispatch] = useReducer(UIReducer, initialState);
-  return ( 
-    <div id="App" className="App">
-        <Title/>
-        <Navigation meowingTab={state.meowingTab} activeTab={state.activeTab} dispatch={dispatch} />
-        <Page state={state} />
-        <Footer/>
-    </div> 
+  return (
+    <>
+
+      <div id="App" className="App ">
+        <div className="wrapper">
+            <Title/>
+            <Navigation meowingTab={state.meowingTab} activeTab={state.activeTab} dispatch={dispatch} />
+            <Page state={state} />
+            <Footer/>
+          <div className="background zigzag zigzag2"/>  
+          <div className="background zigzag2"/> 
+
+        </div> 
+      </div>
+    </>
   )
 } 

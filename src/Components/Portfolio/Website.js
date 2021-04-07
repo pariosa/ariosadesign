@@ -19,7 +19,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
     );
     const getIcons = (techIcons) => technologiesIcons.map(icon =>{
         return(
-        <li className="list-item"> 
+        <li className="list-item list-icon"> 
             <FontAwesomeIcon icon={icon} size="2x"/> 
         </li>
         )
