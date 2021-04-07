@@ -24,8 +24,7 @@ h2{
     width:400%;
     height:3000px;
     left:-1000px;
-    top: 0; 
-    z-index: 0;
+    top: 0;  
 }
 .zigzag {
     z-index: -1;
