@@ -10,7 +10,10 @@ const getTracks = (musicData)=>{
   return musicData.map((e,i)=>(<ReactSoundcloud width="100%" key={i} autoPlay="false" url={e}/>))
 }
 const getMixes = (mixData) =>{
-  return mixData.map((e,i)=>(<ReactMixcloud url={e} />))
+  return mixData.map((e,i)=>{
+    const index = i;
+    return(<ReactMixcloud url={e} key={index} />);
+  })
 }
 export default function Music() {
   const state = useContext(UIContext); 
