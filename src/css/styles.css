@@ -189,7 +189,7 @@ h2{
 }
 
 .introduction{
-
+    min-height:1200px;
 }
 .small-social-container{
     margin:0 auto;
@@ -266,6 +266,9 @@ h3{
 .soundcloud{
     color:#ff5604;
 }
+.bandcamp{
+    color:#525252;
+}
 .github{
     color:#000;
 }
@@ -338,7 +341,6 @@ h3{
 
 .charactersheet{
     width:100%;
-    
     margin:0 auto;
     max-width:500px;
     height:260px;

@@ -1,13 +1,12 @@
-import css from "../../css/styles.css";  
-import React, {useContext} from 'react'
-import { UIContext, UIProvider } from "../../Store/UIContext"
-import { musicData, mixData } from "../../Data/Music"
-import ReactSoundcloud from "./ReactSoundcloud"
-import ReactMixcloud from "./ReactMixcloud"
-import { SocialIcon } from "react-social-icons"
+import React, { useContext } from 'react';
+import { SocialIcon } from "react-social-icons";
+import { mixData, musicData } from "../../Data/Music";
+import { UIContext, UIProvider } from "../../Store/UIContext";
+import ReactMixcloud from "./ReactMixcloud";
+import ReactSoundcloud from "./ReactSoundcloud";
 
 const getTracks = (musicData)=>{
-  return musicData.map((e,i)=>(<ReactSoundcloud width="100%" key={i} autoPlay="false" url={e}/>))
+  return musicData.map((e,i)=>(<ReactSoundcloud width="100%" key={i} autoPlay="false" url={e} />))
 }
 const getMixes = (mixData) =>{
   return mixData.map((e,i)=>(<ReactMixcloud url={e} />))
@@ -17,8 +16,13 @@ export default function Music() {
   return (
     <UIProvider>
       <div className={`page music ${state && state.activeTab === "nav-item-main"? "" : "hidden"}`}>
-        <h3>follow me on soundcloud/mixcloud for more tracks and dj mixes </h3>
+        <h3>follow me on soundcloud/mixcloud/bandcamp for more tracks and dj mixes </h3>
+        
         <div className="small-social-container">
+          <div className="social bandcamp">
+            <SocialIcon url="https://ariosa.bandcamp.com" />
+            <a className="bandcamp link" href="https://ariosa.bandcamp.com">Bandcamp</a>
+          </div> 
           <div className="social soundcloud">
             <SocialIcon url="https://soundcloud.com/ariosa" />
             <a className="soundcloud link" href="https://soundcloud.com/ariosa">Soundcloud</a>
