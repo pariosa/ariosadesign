@@ -1,5 +1,4 @@
 
-
 export const chilaqilesRecipe = {
     title:"chilaquiles",
     ingredients:[""],
@@ -18,7 +17,7 @@ export const chilaqilesRecipe = {
 }
 
 
-const ramenRecipe = {
+export const ramenRecipe = {
     title:"",
     ingredients:{
 
@@ -66,4 +65,9 @@ const ramenRecipe = {
         time:""
     }
 }
+ 
+export const recipeData = [
+	"https://www.youtube.com/embed/BE8K5t3WJ_w",
+] 
 
+export default recipeData

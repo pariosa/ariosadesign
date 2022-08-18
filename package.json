@@ -43,7 +43,6 @@
     "prettier-eslint-cli": "^4.7.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-bandcamp": "1.1.5",
     "react-fontawesome": "^1.7.1",
     "react-hot-loader": "^4.7.0",
     "react-social-icons": "^5.0.0",
